@@ -10,12 +10,13 @@
       {% csrf_token %}
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Name</label>
-        <input type="text" value="{{item.name}}" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Enter name">
+        <input required type="text" value="{{item.name}}" class="form-control" name="name" id="exampleFormControlInput1"
+          placeholder="Enter name">
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput2" class="form-label">Age</label>
-        <input type="number" value="{{item.age}}" class="form-control" name="age" id="exampleFormControlInput2" placeholder="Enter age"
-          min="1" max="100">
+        <input required type="number" value="{{item.age}}" class="form-control" name="age" id="exampleFormControlInput2"
+          placeholder="Enter age" min="1" max="100">
       </div>
       {% if item.gender == 1 %}
       <div class="form-check">
