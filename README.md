@@ -1,5 +1,5 @@
 # Demo Django
-*** This is a basic example of creating, editing and deleting with Django referred to the video on Youtube and look up on ChatGPT ***
+***This is a basic example of creating, editing and deleting with Django referred to the video on Youtube and look up on ChatGPT***
 
 ## Run
 - py manage.py runserver
