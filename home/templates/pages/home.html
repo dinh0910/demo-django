@@ -1,0 +1,49 @@
+{% extends 'pages/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container-sm mt-5">
+  <div class="row">
+    <div class="col-1">
+      <a href="{% url 'create' %}" class="btn btn-outline-primary">
+        Add
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Tools</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in users %}
+          <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.age}}</td>
+            <td>
+              {% if item.gender == 1 %}
+              Male
+              {% else %}
+              Female
+              {% endif %}
+            </td>
+            <td>
+              <a href="{% url 'edit' item.id %}" class="btn btn-warning mr-2">Edit</a>
+              <a href="{% url 'delete' item.id %}" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
