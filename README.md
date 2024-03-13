@@ -1,11 +1,17 @@
 # Demo Django
-*** This is a basic example of creating, editing and deleting with Django referred to the video on Youtube and look up on ChatGPT ***
+
+## Require
+- python 3.9.11
+- django 4.2.11
 
 ## Run
 - py manage.py runserver
-
-## Functions
-- 3 functions: Create, Edit, Delete.
-- Create: Add a new user. There are 3 fields, that are name, age and gender has required.
-- Edit: Edit a user was choose.
-- Delete: Delete a user was choose.
+- Link tutorial setup: https://drive.google.com/file/d/1XFwlRKwkRwE1f2AeqAwRkNFr8k8XMBvK/view?usp=sharing
+- Link video: https://drive.google.com/file/d/1Cj8B2yYpozxc3YzcXALlkY-Q_jYNvS-L/view?usp=sharing
+  
+## What is CRUD?
+- CRUD stands for Create, Read, Update, and Delete. It represents the four basic functions that are typically implemented in database management systems and applications that interact with databases. These functions are:
+- Create: Adding new data records to the database.
+- Read: Retrieving existing data records from the database.
+- Update: Modifying existing data records in the database.
+- Delete: Removing existing data records from the database.
